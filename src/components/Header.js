@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";  
 
 const Header = () => {
-
     let ranId = Math.floor(Math.random() * 10) + 1
+    
+
+    
     return (
     <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark navbar-custom px-4 ">
@@ -34,7 +36,7 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbar-nav">
             <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                <Link className="nav-link" to={`../Movies/${ranId}`}>  
+                <Link className="nav-link" onClick={ranId} to={`../Movies/${ranId}`}>  
                     Random Movie
                 </Link>
                 </li>
