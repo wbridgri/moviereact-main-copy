@@ -50,6 +50,7 @@ const Reviews = () => {
                             onChange={(e) => setUserName(e.target.value)}
                             className="form-control"
                             required
+                            autoComplete="true"
                         />
                     </div>
                 </div>
